@@ -1,0 +1,53 @@
+.people_like_title{
+    font-size: 23px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    text-align: center;
+    color: #050505;
+    padding: 10px;
+}
+.people_like_main{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.a_people{
+    width: 85%;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin-top: 7px;
+    text-decoration: none;
+    color: #050505;
+    font-size: 20px;
+}
+.a_people:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #1881f4;
+}
+.a_people img{
+    height: 60px;
+    border-radius: 100%;
+}
+.a_people_fullname {
+    margin-left: 10px;
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.name_a_people{
+    font-weight: 600;
+}
+.birthday_a_people{
+    font-size: 12px;
+    color: #4a4a4b;
+}

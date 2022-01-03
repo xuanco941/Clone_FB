@@ -1,0 +1,252 @@
+body{
+    overflow-x: hidden;
+}
+.container{
+    background-color: #f0f2f5;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_main{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15vh;
+}
+.box_1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.box_1 img{
+    width: 50%;
+    margin-left: -20px ;
+}
+.box_1 .slogan{
+    font-size: 27px;
+}
+.box_2{
+    width: 50%;
+}
+.box_2_main{
+    width: 65%;
+    background-color: #fff;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.form::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0px;
+}
+.form a {
+    margin-bottom: 20px;
+}
+.form input{
+    margin-bottom: 20px;
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0.2) ;
+    height: 22px;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 17px;
+}
+.form input:focus-visible{
+    outline-style: solid;
+    outline-width: 1px;
+    outline: #1877f2;
+}
+.form button{
+    margin-bottom: 20px;
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0.2) ;
+    padding: 14px;
+    background-color: #1877f2;
+    border-radius: 6px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+.form button{
+    cursor: pointer;
+}
+.form input:focus-visible{
+    outline: none;
+}
+.form a {
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+}
+.new_acc{
+    font-size: 17px;
+    border-radius: 6px;
+    padding: 14px;
+    color: white;
+    border: none;
+    background-color: #42b72a;
+    width: 60%;
+    margin: auto;
+}
+.new_acc:hover{
+    cursor: pointer;
+}
+.new_acc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.form_modal{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.title_modal{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.tt1{
+    display: flex;
+    flex-direction: column;
+}
+.tt2{
+    max-height: 40px;
+    border: none;
+    font-size: 30px;
+    background-color: white;
+}
+.title_1{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.item_modal{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.item_modal input[type='text']{
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 70%;
+}
+.item_modal input[type='password']{
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 70%;
+}
+.item_modal input[type='date']{
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 70%;
+}
+.item_modal input[type='text']:focus-visible{
+   outline: none;
+}
+.item_modal input[type='password']:focus-visible{
+    outline: none;
+ }
+.item_modal input[type='date']:focus-visible{
+    outline: none;
+}
+
+.radio_sex{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#submit_signup{
+    width: 40%;
+    background-color: #00a400;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#blocked{
+    width: 100vw;
+    height: 100vh ;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    cursor: progress;
+    display: none;
+    z-index: 1000;
+}
+@media (max-width:1600px){
+    .new_acc{
+        font-size: 15px;
+        width: 70%;
+    }
+}
+
+@media (max-width:1300px){
+    .box_main{
+        width: 80%;
+    }
+}
+
+@media (max-width:860px){
+    .box_main{
+        width: 100%;
+    }
+    .box_main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box_1,.box_2{
+        width: 95%;
+    }
+    .box_1 {
+        margin-bottom: 40px;
+        align-items: center;
+        text-align: center;
+    }
+    .box_1 span{
+        padding: 14px;
+    }
+    .box_1 .slogan{
+        font-size: 20px;
+    }
+    .new_acc{
+        font-size: 15px;
+        width: 65%;
+    }
+    .title_1{
+        font-size: 20px;
+    }
+}
